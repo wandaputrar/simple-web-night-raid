@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;300;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Saira', sans-serif;
+}
+
+
+
+
+
+#check {
+    display: none;
+}
+label #menu, label #close {
+    color: #1B120F;
+    float: right;
+    line-height: 50px;
+    display: none;
+    margin-right: 10px;
+}
+nav {
+    background-color: rgba(88, 88, 86, 0);
+    overflow: auto;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: 0.5s;
+}
+nav.navTwo {
+    background-color: rgb(88, 88, 86);
+}
+nav .logo {
+    float: left;
+    line-height: 50px;
+    margin-left: 10px;
+}
+nav .logo .boxLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .logo .boxLogo img {
+    height: 45px;
+}
+nav .logo .boxLogo p {
+    color: #EBE645;
+    font-size: 20px;
+}
+nav ul {
+    float: right;
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 49px;
+    padding: 0 10px;
+    transition: 0.3s;
+}
+nav ul li:hover {
+    background-color: #8F1D14;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+
+
+
+
+.jumbotron {
+    width: 100%;
+    max-height: 400px;
+    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9)), url('../image/jumbotron.png');
+    background-size: cover;
+    background-position: center;
+}
+.jumbotron img {
+    height: 150px;
+}
+
+
+
+
+
+main #content{
+    background-color: #E6DEDD;
+    color: #8F1D14;
+    padding: 1px;
+}
+main #content article {
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 50px 0;
+}
+#content article h3 {
+    text-align: center;
+}
+
+
+
+
+
+#tentang .isiTentang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1B120F;
+    font-size: 15px;
+}
+#tentang .isiTentang img {
+    width: 190px;
+    margin: 10px;
+}
+#tentang .isiTentang .box-kolom {
+    margin: 10px;
+}
+.isiTentang .box-kolom table {
+    text-align: left;
+    border-top: 1px solid;
+}
+.isiTentang .box-kolom table th {
+    width: 100px;
+}
+
+
+
+
+
+#sejarah {
+    background-image: url('../image/bgSejarah.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#sejarah .isiSejarah {
+    color: #1B120F;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sejarah .isiSejarah p {
+    margin: 20px 0;
+}
+
+
+
+
+
+
+#anggota .box-kolom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#anggota .box-baris {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#anggota .card {
+    background-color: green;
+    color: white;
+    margin: 30px;
+    min-height: 300px;
+    min-width: 200px;
+    text-align: center;
+    padding-top: 250px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+#anggota #akame {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url('../image/akame.jpg');
+    border: 6px solid #40055e;
+}
+#anggota #akame:hover {
+    border: 0;
+    box-shadow: 0px 0px 20px 3px #40055e;
+}
+
+#anggota #tatsumi {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url('../image/tatsumi.jpg');
+    border: 6px solid #9c7e3a;
+}
+#anggota #tatsumi:hover {
+    border: 0;
+    box-shadow: 0px 0px 20px 3px #9c7e3a;
+}
+
+#anggota #najenda {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url('../image/najenda.jpg');
+    border: 6px solid #9c9a9a;
+}
+#anggota #najenda:hover {
+    border: 0;
+    box-shadow: 0px 0px 20px 3px #9c9a9a;
+}
+
+#anggota #susanoo {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url('../image/susanoo.jpg');
+    border: 6px solid #0a50a1;
+}
+#anggota #susanoo:hover {
+    border: 0;
+    box-shadow: 0px 0px 20px 3px #0a50a1;
+}
+
+#anggota #leone {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url('../image/leone.jpg');
+    border: 6px solid #c7b52a;
+}
+#anggota #leone:hover {
+    border: 0;
+    box-shadow: 0px 0px 20px 3px #c7b52a;
+}
+
+#anggota #bulat {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url('../image/bulet.jpg');
+    border: 6px solid #268c3f;
+}
+#anggota #bulat:hover {
+    border: 0;
+    box-shadow: 0px 0px 20px 3px #268c3f;
+}
+
+#anggota #mine {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url('../image/mine.jpg');
+    border: 6px solid #f263a1;
+}
+#anggota #mine:hover {
+    border: 0;
+    box-shadow: 0px 0px 20px 3px #f263a1;
+}
+
+#anggota #chelsea {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url('../image/chelsea.jpg');
+    border: 6px solid #f78c68;
+}
+#anggota #chelsea:hover {
+    border: 0;
+    box-shadow: 0px 0px 20px 3px #f78c68;
+}
+
+#anggota #lubbock {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url('../image/lubbock.jpg');
+    border: 6px solid #58d660;
+}
+#anggota #lubbock:hover {
+    border: 0;
+    box-shadow: 0px 0px 20px 3px #58d660;
+}
+
+#anggota #sheele {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url('../image/sheele.jpg');
+    border: 6px solid #9d35b5;
+}
+#anggota #sheele:hover {
+    border: 0;
+    box-shadow: 0px 0px 20px 3px #9d35b5;
+}
+
+
+
+
+
+aside {
+    background-color: #585856;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+aside h4 {
+    margin-bottom: 10px;
+}
+aside .biodata {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: #1B120F;
+    background-color: #E6DEDD;
+    width: 430px;
+    height: 180px;
+}
+.biodata img {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #E6DEDD;
+    object-fit: cover;
+    object-position: top;
+}
+.biodata .dataDiri {
+    width: 250px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.dataDiri p {
+    font-size: 15px;
+    color: #8F1D14;
+    font-weight: bold;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.dataDiri table {
+    font-size: 11px;
+    flex-grow: 3;
+    padding: 10px;
+    padding-top: 0;
+}
+.dataDiri table tr th {
+    text-align: left;
+}
+.dataDiri .sosmedContainer {
+    flex-grow: 1;
+    display: flex;
+}
+.dataDiri .sosmedContainer .sosmed {
+    flex-grow: 1;
+    text-align: center;
+    color: #E6DEDD;
+    background-color: #8F1D14;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dataDiri .sosmedContainer .sosmed:hover {
+    color: #8F1D14;
+    background-color: #E6DEDD;
+}
+
+
+
+
+
+
+footer {
+    background-color: #1B120F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .sosmedWeb {
+    display: flex;
+}
+footer .sosmedWeb .sosmed {
+    flex-grow: 1;
+    width: 40px;
+    height: 30x;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 3px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #585856;
+    transition: 0.3s;
+}
+footer .sosmedWeb #facebook:hover {
+    background-color: #3b5998;
+}
+footer .sosmedWeb #youtube:hover {
+    background-color: #c4302b;
+}
+footer .sosmedWeb #instagram:hover {
+    background-color: #dd2a7b;
+}
+
+
+
+
+
+/*---------------  MEDIA QUERY  ---------------*/
+
+@media screen and (max-width: 700px) {
+    label #menu {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        background-color: rgb(88, 88, 86, 0.9);
+        width: 100%;
+        text-align: center;
+        top: 49px;
+        right: -100%;
+        transition: 0.5s;
+    }
+    nav ul li {
+        display: block;
+    }
+    #check:checked ~ ul {
+        right: 0;
+    }
+    #check:checked ~ label #menu {
+        display: none;
+    }
+    #check:checked ~ label #close {
+        display: block;
+    }
+
+    .jumbotron {
+        max-height: 150px;
+        padding-top: 80px;
+    }
+    .jumbotron img {
+        height: 70px;
+    }
+
+    #sejarah .isiSejarah img {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    #tentang .isiTentang {
+        flex-direction: column;
+    }
+    
+    #anggota .box-baris {
+        flex-direction: column;
+    }
+
+    aside .biodata {
+        flex-direction: column;
+        width: 250px;
+        height: 360px;
+    }
+    .biodata img {
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+        border-radius: 50%;
+    }
+    .dataDiri p {
+        justify-content: center;
+    }
+}
